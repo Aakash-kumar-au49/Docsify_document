@@ -29,7 +29,17 @@ Simple installation process using npm, and an initialization command that sets u
 ### Cross-Platform Compatibility
 Works well on different platforms, providing a consistent documentation experience for users regardless of their operating system.
 # Step by step guide to installation and Setup
-## pre requirement
+## pre requirement  
+
+* Node.js  
+* Npm  
+* Vercel  
+
+## OS details  
+To find the os details run the following command:  
+```
+cat /etc/os-release
+```
 ```
 NAME="Ubuntu"
 VERSION="20.04.6 LTS (Focal Fossa)"
@@ -37,7 +47,19 @@ ID=ubuntu
 ID_LIKE=debian
 PRETTY_NAME="Ubuntu 20.04.6 LTS"
 VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
 
+```
+Before installing anything make sure that your system is aware of the latest information. Run the following commands to update and upgrade:   
+
+```
+sudo apt update  
+sudo apt upgrade
 ```
 
 ### Step 1: Install Node.js
@@ -149,6 +171,8 @@ you can edit the intro.md file by the following command
 ```
 vim introduction.md
 ```
+vim is a powerful editor which is used to edit files. You can use any editor of your choice like vi , nano etc.  
+
 # Configuration
 All core configuration for docsify is done in the index.html file using the window.$docsify script object.
 ## Sidebar
@@ -370,7 +394,7 @@ Alternatively, you can create a custom markdown-based navigation file by setting
 ```
 This approach allows you to have a custom navigation structure defined in a Markdown file, giving you more control over the organization of your documentation site. Users can navigate between sections easily using the links provided in the custom navigation bar.
 
-## Markdown usage
+## Markdown  
 Markdown is a lightweight markup language that is widely used for formatting and styling plain text. In the context of Docsify, a documentation site generator, Markdown serves as the primary language for creating and formatting content. Here are some common uses of Markdown in Docsify:
 
 #### Document Formatting:
@@ -403,7 +427,9 @@ Markdown allows you to apply emphasis, bold text, and other styles to enhance th
 ```
 These are just a few examples of how Markdown is utilized in Docsify. Markdown's simplicity and readability make it an excellent choice for creating documentation content, and Docsify enhances the experience by providing additional features such as automatic sidebar generation and integrated searching.
 
-# List of Plugins
+# List of Plugins  
+Plugins refer to software components or modules that add specific features or functionality to a larger application or system. Plugins are designed to extend the capabilities of the core software without modifying its original codebase, allowing for greater flexibility and customization.  
+
 ## Full text search
 By default, the hyperlink on the current page is recognized and the content is saved in localStorage. You can also specify the path to the files.
 ```
@@ -480,7 +506,13 @@ If the script on the page is an external one (imports a js file via src attribut
 
 # Deploy
 ## Vercel
-Vercel is a cloud platform that enables developers to deploy and host websites and applications. It is known for its focus on simplicity and speed, making it easy for developers to quickly deploy their projects. Here are some key features and aspects of Vercel
+Vercel is a cloud platform that enables developers to deploy and host websites and applications. It is known for its focus on simplicity and speed, making it easy for developers to quickly deploy their projects.Vercel offers a powerful platform for deploying, managing, and scaling web applications with ease, enabling developers to focus on building great products without worrying about infrastructure management.Here are some key features and aspects of Vercel:  
+
+**Serverless Deployment**: Vercel offers a serverless deployment model, allowing developers to deploy their web applications without managing servers. This enables automatic scaling and reduces operational complexity.  
+
+**Automatic Previews**: Vercel automatically generates preview deployments for each pull request, allowing developers to preview changes before merging them into the main branch. This helps streamline collaboration and ensure code quality.  
+
+**Analytics and Monitoring**: Vercel provides built-in analytics and monitoring tools to help developers track performance metrics, monitor deployments, and identify potential issues in real-time.  
 
 ### Installation of vercel
 Run the following command to install vercel in your system
